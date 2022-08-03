@@ -49,9 +49,7 @@ console.log(health) // -> 90
 
         todaysWillpowerNeeded += cleaning
         todaysWillpowerNeeded += work
-        todaysWillpowerNeeded += exercising
-        todaysWillpowerNeeded -= tee * 2
-        todaysWillpowerNeeded -= sweets * 2
+        todaysWillpowerNeeded -= ((exercising / tee) - sweets)
 
         document.getElementById("willpower").textContent = todaysWillpowerNeeded + ""
     };
